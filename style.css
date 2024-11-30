@@ -1,71 +1,71 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 :root {
-    --Light-Cyan: hsl(193, 38%, 86%);
-    --Neon-Green: hsl(150, 100%, 66%);
-    --Grayish-Blue: hsl(217, 19%, 38%);
-    --Dark-Grayish-Blue: hsl(217, 19%, 24%);
-    --Dark-Blue: hsl(218, 23%, 16%);
+  --Light-Cyan: hsl(193, 38%, 86%);
+  --Neon-Green: hsl(150, 100%, 66%);
+  --Grayish-Blue: hsl(217, 19%, 38%);
+  --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+  --Dark-Blue: hsl(218, 23%, 16%);
 }
 
 body {
-    background-color: var(--Dark-Blue);
-    font-family: Manrope;
-    font-size: 28px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  background-color: var(--Dark-Blue);
+  font-family: Manrope;
+  font-size: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .container {
-    background-color: var(--Dark-Grayish-Blue);
-    width: 600px;
-    border-radius: 1em;
-    padding: 1em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    position: absolute;
+  background-color: var(--Dark-Grayish-Blue);
+  width: 600px;
+  border-radius: 1em;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
 }
 
 h4 {
-    color: var(--Neon-Green);
-    font-size: 1.2rem;
+  color: var(--Neon-Green);
+  font-size: 1.2rem;
 }
 
 p {
-    color: var(--Light-Cyan);
-    font-size: 1.6rem;
-    text-align: center;
+  color: var(--Light-Cyan);
+  font-size: 1.6rem;
+  text-align: center;
 }
 
 .desktop-divider {
-    padding-top: 1em;
+  padding-top: 1em;
 }
 
 .mobile-divider {
-    display: none;
+  display: none;
 }
 
 .dice-container {
-    background-color: var(--Neon-Green);
-    padding: .5em;
-    border-radius: 50%;
-    position: relative;
-    bottom: -53px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-}   
+  background-color: var(--Neon-Green);
+  padding: 0.5em;
+  border-radius: 50%;
+  position: relative;
+  bottom: -53px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
 
 .dice {
-    position: relative;
-    bottom: -3px;
+  position: relative;
+  bottom: -3px;
 }
