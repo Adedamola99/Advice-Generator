@@ -25,14 +25,14 @@ body {
 
 .container {
   background-color: var(--Dark-Grayish-Blue);
-  width: 600px;
+  max-width: 70%;
+  min-width: 50%;
   border-radius: 1em;
-  padding: 1em;
+  padding: 1.5em 1em;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
-  position: absolute;
+  gap: 25px;
 }
 
 h4 {
@@ -42,12 +42,8 @@ h4 {
 
 p {
   color: var(--Light-Cyan);
-  font-size: 1.6rem;
+  /* font-size: 1.4rem; */
   text-align: center;
-}
-
-.desktop-divider {
-  padding-top: 1em;
 }
 
 .mobile-divider {
@@ -59,13 +55,50 @@ p {
   padding: 0.5em;
   border-radius: 50%;
   position: relative;
-  bottom: -53px;
+  bottom: 30px;
   cursor: pointer;
   display: flex;
   align-items: center;
+  width: 60px;
+  height: 60px;
+  justify-content: center;
 }
 
-.dice {
-  position: relative;
-  bottom: -3px;
+.dice-container.animate {
+  animation: roll 2s linear;
+}
+
+@keyframes roll {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  p {
+    font-size: 1.4rem;
+  }
+
+  .mobile-divider {
+    display: block;
+    width: 100%;
+  }
+
+  .desktop-divider {
+    display: none;
+  }
+
+  .dice-container {
+    width: 40px;
+    height: 40px;
+    bottom: 20px;
+  }
+
+  .dice-container img {
+    width: 20px;
+    /* height: 40px; */
+  }
 }
