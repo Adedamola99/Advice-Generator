@@ -98,8 +98,7 @@ getAdvice();
 
 ## 🌐 Live Demo
 
-You can deploy easily to **Netlify** or **GitHub Pages**.
 
 ---
 
-Do you want me to also make a **shorter, minimal version** (like what you’d put directly on GitHub), or keep this detailed one with examples?
+
