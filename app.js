@@ -14,7 +14,7 @@ async function fetchData() {
   } catch (error) {
     diceBtn.classList.remove("animate");
     adviceText.textContent = error.message;
-    console.error(`Error fetching data: ${error.message}`);
+    // console.error(`Error fetching data: ${error.message}`);
   }
 }
 
